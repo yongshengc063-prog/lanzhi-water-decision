@@ -1,0 +1,15 @@
+name: Keep Render service awake
+
+on:
+  schedule:
+    # Render 免费实例闲置约 15 分钟会休眠；每 5 分钟探活一次。
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping health endpoint
+        run: |
+          curl -fsS --max-time 90 https://lanzhi-water-decision.onrender.com/api/health

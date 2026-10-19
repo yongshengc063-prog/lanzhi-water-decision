@@ -9,15 +9,21 @@
       content="澜知 · 全球水质资讯与水域生态修复智能决策平台：真实全球水质资讯、知识增强诊断与可追溯修复决策报告。"
     />
     <title>澜知 · 守护每一滴碧水 | 全球水质资讯与生态修复决策</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <!-- 字体本地托管：不依赖 Google Fonts，避免中国大陆无法访问导致首屏阻塞。 -->
+    <link rel="stylesheet" href="/fonts/fonts.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- JS 加载前的占位，避免空白首屏 -->
+      <div
+        style="min-height: 100vh; display: grid; place-items: center; background: #f4f9fc; color: #0b7ea8; font-family: system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;"
+      >
+        <div style="text-align: center">
+          <div style="font-size: 20px; font-weight: 600; letter-spacing: 0.08em">澜知 · LANZHI</div>
+          <div style="margin-top: 10px; font-size: 12px; color: #6b8ca3">正在加载，请稍候…</div>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
