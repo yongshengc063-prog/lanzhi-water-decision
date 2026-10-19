@@ -40,7 +40,10 @@ const rawOrigin = (process.env.DIFY_BASE_URL || 'https://api.dify.ai').replace(/
 const difyBase = rawOrigin.replace(/\/v\d+$/i, '')
 const difyKey = process.env.DIFY_API_KEY || ''
 // 公开演示版：即使误配了 DIFY_API_KEY，也拒绝一切实时工作流调用。
-const publicDemoOnly = process.env.PUBLIC_DEMO_ONLY === 'true'
+// 生产环境默认关闭实时模式；私有部署如确需开启，显式设置 ALLOW_LIVE_DIFY=true。
+const publicDemoOnly =
+  process.env.PUBLIC_DEMO_ONLY === 'true' ||
+  (process.env.NODE_ENV === 'production' && process.env.ALLOW_LIVE_DIFY !== 'true')
 
 const app = express()
 app.disable('x-powered-by')
