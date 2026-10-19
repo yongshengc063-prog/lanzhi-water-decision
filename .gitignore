@@ -1,0 +1,7 @@
+node_modules
+dist
+# secrets: never commit real keys (.env.example is safe)
+.env
+.env.local
+.env.*.local
+*.tsbuildinfo

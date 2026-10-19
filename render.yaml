@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: lanzhi-water-decision
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      # 公开演示版：前端固定走本地样例，服务端拒绝所有 Dify 实时调用。
+      - key: PUBLIC_DEMO_ONLY
+        value: "true"
+      - key: VITE_PUBLIC_DEMO_ONLY
+        value: "true"
+      # 资讯源：GDELT 免费无需密钥；失败时自动回退公共 RSS。
+      - key: NEWS_PROVIDER
+        value: gdelt
+      - key: NEWS_RSS_ENABLED
+        value: "true"
+      - key: NEWS_DEFAULT_QUERY
+        value: water pollution OR water quality OR river restoration OR wetland restoration

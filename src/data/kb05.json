@@ -1,0 +1,153 @@
+{
+  "metadata": {
+    "source": "知识库.zip/KB05_修复效果数据/KB05_修复效果合并总表.csv",
+    "record_count": 1005,
+    "distinct_case_ids": 451,
+    "documented_case_files": 26,
+    "note": "一行代表案例的一条指标记录，不等于一个独立修复项目；不同证据类型不能合并推断"
+  },
+  "waterTypes": [
+    {
+      "name": "湖泊",
+      "value": 388
+    },
+    {
+      "name": "河流",
+      "value": 175
+    },
+    {
+      "name": "人工湿地",
+      "value": 131
+    },
+    {
+      "name": "湿地",
+      "value": 91
+    },
+    {
+      "name": "河流/水库围隔",
+      "value": 66
+    },
+    {
+      "name": "人工湿地/景观生态塘",
+      "value": 60
+    },
+    {
+      "name": "水库",
+      "value": 52
+    },
+    {
+      "name": "景观水体",
+      "value": 42
+    }
+  ],
+  "evidenceTypes": [
+    {
+      "name": "D",
+      "value": 617
+    },
+    {
+      "name": "A",
+      "value": 257
+    },
+    {
+      "name": "C",
+      "value": 94
+    },
+    {
+      "name": "B",
+      "value": 22
+    },
+    {
+      "name": "未标注",
+      "value": 15
+    }
+  ],
+  "sourceTypes": [
+    {
+      "name": "论文",
+      "value": 712
+    },
+    {
+      "name": "原表",
+      "value": 135
+    },
+    {
+      "name": "报告",
+      "value": 57
+    },
+    {
+      "name": "综述",
+      "value": 48
+    },
+    {
+      "name": "专利",
+      "value": 35
+    },
+    {
+      "name": "报道",
+      "value": 18
+    }
+  ],
+  "topIndicators": [
+    {
+      "name": "TP",
+      "value": 118
+    },
+    {
+      "name": "COD",
+      "value": 59
+    },
+    {
+      "name": "TN",
+      "value": 56
+    },
+    {
+      "name": "Chl.a",
+      "value": 45
+    },
+    {
+      "name": "NH3-N",
+      "value": 42
+    },
+    {
+      "name": "透明度",
+      "value": 28
+    },
+    {
+      "name": "DO",
+      "value": 27
+    },
+    {
+      "name": "TSS",
+      "value": 25
+    },
+    {
+      "name": "Chl-a",
+      "value": 22
+    },
+    {
+      "name": "CODCr",
+      "value": 20
+    },
+    {
+      "name": "BOD5",
+      "value": 18
+    },
+    {
+      "name": "透明度比值(后/前)",
+      "value": 18
+    },
+    {
+      "name": "pH",
+      "value": 17
+    },
+    {
+      "name": "BOD",
+      "value": 12
+    },
+    {
+      "name": "浮游植物生物量PB",
+      "value": 11
+    }
+  ]
+}
